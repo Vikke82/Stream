@@ -10,7 +10,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.figure_factory as ff#pip install plotly
+#import plotly.figure_factory as ff#pip install plotly
 from pandas.api.types import is_numeric_dtype
 
 st.title("Document titles", anchor=None)
@@ -107,7 +107,7 @@ for col in df.columns:
 st.write(group_labels)
 
 # Create distplot with custom bin_size
-fig = ff.create_distplot(hist_data, group_labels)
+#fig = ff.create_distplot(hist_data, group_labels)
 
 # Plot!
-st.plotly_chart(fig, use_container_width=True)
+#st.plotly_chart(fig, use_container_width=True)
